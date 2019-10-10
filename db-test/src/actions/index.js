@@ -1,4 +1,4 @@
-import { ADD_PROFILES, SELECT_PROFILES, UNSELECT_PROFILES } from '../constance';
+import { ADD_PROFILES, SELECT_PROFILES } from '../constance';
 import dataTest from '../test.json';
 
 const addProfiles = (profiles) => ({ type: ADD_PROFILES, payload: profiles});
@@ -16,11 +16,3 @@ export const selectedProfile = (profile) => {
         dispatch(selectProfiles(profile));
     }
 }
-
-// const unSelectProfiles = (profiles) => ({ type: UNSELECT_PROFILES, payload: profiles});
-
-// export selectedProfile = () => {
-//     return dispatch => {
-//         dispatch(selectProfiles(dataTest));
-//     }
-// }
